@@ -11,10 +11,10 @@ The project consists of three main components:
 
 ```mermaid
 graph TD
-    User[User] -->|View Articles| Frontend[Frontend (React)]
-    Frontend -->|API Requests| Backend[Backend (Laravel)]
+    User[User] -->|View Articles| Frontend["Frontend (React)"]
+    Frontend -->|API Requests| Backend["Backend (Laravel)"]
     Backend <-->|Read/Write| DB[(Database)]
-    Processor[Processor (Node.js)] -->|Fetch & Process| External[External Sources]
+    Processor["Processor (Node.js)"] -->|Fetch & Process| External[External Sources]
     Processor -->|AI Enhancement| Gemini[Gemini API]
     Processor -->|Save Processed Data| Backend
 ```
